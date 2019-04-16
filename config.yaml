@@ -1,0 +1,19 @@
+# path of the file with sample list
+samples: '/home/j.bhin/pipelines/CNVkit_RNAseq/samples.tsv'
+
+################################################################################
+# Path configuration                                                           
+################################################################################
+
+path:
+  data: '/home/j.bhin/mTOR/RNAseq/cnvkit/cnvkit-examples/rna'
+  pipeline: '/home/j.bhin/pipelines/CNVkit_RNAseq'
+  input: '/home/j.bhin/mTOR/RNAseq/cnvkit/cnvkit-examples/rna/cnv_input'
+
+
+cnvkit:
+  options:
+    - -f counts
+#    - -c /home/j.bhin/mTOR/RNAseq/cnvkit/cnvkit-examples/rna/resource/tcga-skcm.cnv-expr-corr.tsv
+    - -g /home/j.bhin/mTOR/RNAseq/cnvkit/cnvkit-examples/rna/resource/ensembl-gene-info.hg38.tsv
+
